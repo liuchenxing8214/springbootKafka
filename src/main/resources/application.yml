@@ -1,0 +1,13 @@
+
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: 192.168.1.2:9092
+      group-id: group_idikji9o
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: 192.168.1.2:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringSerializer
+      value-deserializer: org.apache.kafka.common.serialization.StringSerializer
